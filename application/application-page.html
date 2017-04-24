@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8" />
+    <title>DashBoard Triple6</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">  
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+    <script src="http://code.angularjs.org/1.2.1/angular-route.min.js"></script>
+  
+</head>
+<body>
+     
+  <div class="container">
+   <div class="MainApplication">
+      <div class="navigationbar">
+        <!-- Contains Left Header-->
+        <div class="left-header">
+            <div class="logo">
+                <img src="images/profile.png" alt="earch icon" height="40" width="42">
+                LOGO
+            </div>
+        </div>
+            <!-- Contains Right Header-->
+        <div class="right-header">
+            <div class="right-headerContent search-content">
+                <img src="images/search_icon.png" id="toggle" alt="earch icon" height="40" width="42">
+            </div>
+            <div class="right-headerContent">
+                Logout
+            </div>
+            <div class="right-headerContent">
+                <img src="images/profile.png" alt="earch icon" height="40" width="42">
+                Profile
+            </div>
+        </div>
+    </div>
+      <div ng-view> </div>
+</div>
+   
+   <div class="footer">
+          <b>Powered By:</b> <br>  
+      GLOBALLOGIC INDIA PLIMITED INC.
+   </div>
+  </div>
+      
+  <!--java script files-->
+  <script src="./script/root.js"></script>
+  <script src="./script/controllers/DashboardController.js"> </script>
+  <script src="./script/controllers/detailedController.js"></script>
+  <script src="./script/directives/responsePage.js"></script>
+  <script src="./script/directives/stakeHolder.js"></script>
+  <script src="./script/directives/ragStatus.js"></script>
+  <script src="./script/directives/stageWise.js"></script>
+  <script src="./script/directives/bandWise.js"></script>
+</body>
+</html>
